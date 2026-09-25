@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Future Husband Specifications — Rev 1.0</title>
+<meta name="description" content="A compliance datasheet for one prospective life partner. 65 weighted requirements, 8 automatic rejection triggers.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ── masthead ─────────────────────────────────────────── -->
+<header class="masthead">
+  <div class="wrap masthead__meta">
+    <span>DOC · FHS-1.0</span>
+    <span class="masthead__conf">Confidential — for her eyes only</span>
+    <span id="metaDate">REV 1.0</span>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Future Husband Specifications v1.0 &nbsp;✦&nbsp; Personality carries the highest weight &nbsp;✦&nbsp; One red flag overrides the entire score &nbsp;✦&nbsp; Built for exactly one candidate &nbsp;✦&nbsp; </span>
+      <span>Future Husband Specifications v1.0 &nbsp;✦&nbsp; Personality carries the highest weight &nbsp;✦&nbsp; One red flag overrides the entire score &nbsp;✦&nbsp; Built for exactly one candidate &nbsp;✦&nbsp; </span>
+    </div>
+  </div>
+
+  <div class="wrap hero">
+    <p class="eyebrow reveal">Compliance datasheet · issued by the heart, filed by you</p>
+    <h1 class="hero__title">
+      <span class="ln"><span class="ln__in" style="--d:.05s">Future Husband</span></span>
+      <span class="ln"><span class="ln__in" style="--d:.16s">Specifications<sup>v1.0</sup></span></span>
+    </h1>
+    <svg class="hero__underline" viewBox="0 0 600 24" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M4 15C90 6 170 19 258 11C352 3 440 18 596 8" />
+    </svg>
+    <div class="hero__foot">
+      <p class="hero__sub reveal">One candidate. <b>65</b> weighted requirement units. <b>8</b> automatic rejection triggers. Non-negotiable where it matters, soft where it doesn't.</p>
+      <ul class="hero__legend reveal">
+        <li><i class="dot dot--ink"></i>Must-have</li>
+        <li><i class="dot dot--rose"></i>Bonus</li>
+        <li><i class="dot dot--flag"></i>Dealbreaker</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ── intake ─────────────────────────────────────────── -->
+  <section class="intake reveal" aria-labelledby="intakeTitle">
+    <p class="sec-label" id="intakeTitle"><span>00</span> Candidate intake</p>
+    <div class="intake__grid">
+      <label class="field">
+        <span>Candidate name / alias</span>
+        <input id="candName" type="text" placeholder="the one, hopefully" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>Height (cm) — auto-checks S-01</span>
+        <input id="candHeight" type="number" min="120" max="230" placeholder="178" autocomplete="off">
+      </label>
+      <div class="field field--static">
+        <span>Assessment date</span>
+        <strong id="today">—</strong>
+      </div>
+      <div class="field field--static">
+        <span>Assessed by</span>
+        <strong>You, obviously</strong>
+      </div>
+    </div>
+    <div class="intake__actions">
+      <button class="ghost" id="demoBtn" type="button">Load a sample file</button>
+      <button class="ghost" id="resetBtn" type="button">Clear sheet</button>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <!-- ── spec sheet ───────────────────────────────────── -->
+    <div class="specs">
+
+      <!-- 01 PERSONALITY -->
+      <section class="spec reveal" aria-labelledby="s1">
+        <header class="spec__head">
+          <span class="spec__reg" aria-hidden="true">+</span>
+          <div class="spec__no">01</div>
+          <div class="spec__title">
+            <h2 id="s1">Personality</h2>
+            <p>Highest priority — every row weighted ×3</p>
+          </div>
+          <div class="spec__tally"><b id="t-personality">0</b><span>/15</span></div>
+        </header>
+        <ul class="rows">
+          <li class="row reveal"><label for="c-P-01"><input type="checkbox" id="c-P-01" data-group="personality" data-code="P-01"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Muslim</span><span class="row__leader"></span><span class="row__code">P-01</span></label></li>
+          <li class="row reveal"><label for="c-P-02"><input type="checkbox" id="c-P-02" data-group="personality" data-code="P-02"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Trusts me deeply <em>— especially because my work involves talking to men</em></span><span class="row__leader"></span><span class="row__code">P-02</span></label></li>
+          <li class="row reveal"><label for="c-P-03"><input type="checkbox" id="c-P-03" data-group="personality" data-code="P-03"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Supports my dreams, career and ambitions</span><span class="row__leader"></span><span class="row__code">P-03</span></label></li>
+          <li class="row reveal"><label for="c-P-04"><input type="checkbox" id="c-P-04" data-group="personality" data-code="P-04"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">We make important decisions together</span><span class="row__leader"></span><span class="row__code">P-04</span></label></li>
+          <li class="row reveal"><label for="c-P-05"><input type="checkbox" id="c-P-05" data-group="personality" data-code="P-05"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Passionate about life</span><span class="row__leader"></span><span class="row__code">P-05</span></label></li>
+          <li class="row reveal"><label for="c-P-06"><input type="checkbox" id="c-P-06" data-group="personality" data-code="P-06"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Kind-hearted</span><span class="row__leader"></span><span class="row__code">P-06</span></label></li>
+          <li class="row reveal"><label for="c-P-07"><input type="checkbox" id="c-P-07" data-group="personality" data-code="P-07"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Emotionally mature</span><span class="row__leader"></span><span class="row__code">P-07</span></label></li>
+          <li class="row reveal"><label for="c-P-08"><input type="checkbox" id="c-P-08" data-group="personality" data-code="P-08"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Respectful</span><span class="row__leader"></span><span class="row__code">P-08</span></label></li>
+          <li class="row reveal"><label for="c-P-09"><input type="checkbox" id="c-P-09" data-group="personality" data-code="P-09"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Hardworking</span><span class="row__leader"></span><span class="row__code">P-09</span></label></li>
+          <li class="row reveal"><label for="c-P-10"><input type="checkbox" id="c-P-10" data-group="personality" data-code="P-10"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Responsible</span><span class="row__leader"></span><span class="row__code">P-10</span></label></li>
+          <li class="row reveal"><label for="c-P-11"><input type="checkbox" id="c-P-11" data-group="personality" data-code="P-11"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Wants to become a father one day</span><span class="row__leader"></span><span class="row__code">P-11</span></label></li>
+          <li class="row reveal"><label for="c-P-12"><input type="checkbox" id="c-P-12" data-group="personality" data-code="P-12"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Communicates openly instead of shutting down</span><span class="row__leader"></span><span class="row__code">P-12</span></label></li>
+          <li class="row reveal"><label for="c-P-13"><input type="checkbox" id="c-P-13" data-group="personality" data-code="P-13"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">I can tell him absolutely everything <em>— no shame, no judgment</em></span><span class="row__leader"></span><span class="row__code">P-13</span></label></li>
+          <li class="row reveal"><label for="c-P-14"><input type="checkbox" id="c-P-14" data-group="personality" data-code="P-14"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Stays calm during arguments <em>— I know I can lose my temper</em></span><span class="row__leader"></span><span class="row__code">P-14</span></label></li>
+          <li class="row reveal"><label for="c-P-15"><input type="checkbox" id="c-P-15" data-group="personality" data-code="P-15"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Helps solve problems instead of making them worse</span><span class="row__leader"></span><span class="row__code">P-15</span></label></li>
+        </ul>
+      </section>
+
+      <!-- 02 RELATIONSHIP -->
+      <section class="spec reveal" aria-labelledby="s2">
+        <header class="spec__head">
+          <span class="spec__reg" aria-hidden="true">+</span>
+          <div class="spec__no">02</div>
+          <div class="spec__title">
+            <h2 id="s2">Relationship</h2>
+            <p>Weighted ×2 · one optional row for the soft-hearted</p>
+          </div>
+          <div class="spec__tally"><b id="t-relationship">0</b><span>/7</span></div>
+        </header>
+        <ul class="rows">
+          <li class="row reveal"><label for="c-R-01"><input type="checkbox" id="c-R-01" data-group="relationship" data-code="R-01"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">My best friend before anything else</span><span class="row__leader"></span><span class="row__code">R-01</span></label></li>
+          <li class="row reveal"><label for="c-R-02"><input type="checkbox" id="c-R-02" data-group="relationship" data-code="R-02"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Makes me feel emotionally safe</span><span class="row__leader"></span><span class="row__code">R-02</span></label></li>
+          <li class="row reveal"><label for="c-R-03"><input type="checkbox" id="c-R-03" data-group="relationship" data-code="R-03"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Loyal</span><span class="row__leader"></span><span class="row__code">R-03</span></label></li>
+          <li class="row reveal"><label for="c-R-04"><input type="checkbox" id="c-R-04" data-group="relationship" data-code="R-04"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Doesn't play games</span><span class="row__leader"></span><span class="row__code">R-04</span></label></li>
+          <li class="row reveal"><label for="c-R-05"><input type="checkbox" id="c-R-05" data-group="relationship" data-code="R-05"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Believes in teamwork</span><span class="row__leader"></span><span class="row__code">R-05</span></label></li>
+          <li class="row reveal"><label for="c-R-06"><input type="checkbox" id="c-R-06" data-group="relationship" data-code="R-06"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">We grow together instead of competing</span><span class="row__leader"></span><span class="row__code">R-06</span></label></li>
+          <li class="row reveal"><label for="c-R-07"><input type="checkbox" id="c-R-07" data-group="relationship" data-code="R-07"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Loves our future family</span><span class="row__leader"></span><span class="row__code">R-07</span></label></li>
+          <li class="row row--bonus reveal"><label for="c-R-08"><input type="checkbox" id="c-R-08" data-group="relationship" data-code="R-08" data-optional="1"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Knows when a forehead kiss can calm the situation <em>— optional, but appreciated 😂</em></span><span class="row__leader"></span><span class="row__code">BONUS</span></label></li>
+        </ul>
+      </section>
+
+      <!-- 03 PHYSICAL -->
+      <section class="spec reveal" aria-labelledby="s3">
+        <header class="spec__head">
+          <span class="spec__reg" aria-hidden="true">+</span>
+          <div class="spec__no">03</div>
+          <div class="spec__title">
+            <h2 id="s3">Physical</h2>
+            <p>Weighted ×1 · S-01 is measured, not opinion</p>
+          </div>
+          <div class="spec__tally"><b id="t-physical">0</b><span>/6</span></div>
+        </header>
+        <ul class="rows">
+          <li class="row row--auto reveal">
+            <label for="c-S-01">
+              <input type="checkbox" id="c-S-01" data-group="physical" data-code="S-01" disabled>
+              <span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span>
+              <span class="row__text">Taller than me <em id="s01note">— awaiting height in intake</em></span>
+              <span class="row__leader"></span>
+              <span class="row__code">S-01</span>
+            </label>
+          </li>
+          <li class="row reveal"><label for="c-S-02"><input type="checkbox" id="c-S-02" data-group="physical" data-code="S-02"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Strong — goes to the gym</span><span class="row__leader"></span><span class="row__code">S-02</span></label></li>
+          <li class="row reveal"><label for="c-S-03"><input type="checkbox" id="c-S-03" data-group="physical" data-code="S-03"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Can pick up my tiny 48 kg self 😂</span><span class="row__leader"></span><span class="row__code">S-03</span></label></li>
+          <li class="row reveal"><label for="c-S-04"><input type="checkbox" id="c-S-04" data-group="physical" data-code="S-04"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Dresses well</span><span class="row__leader"></span><span class="row__code">S-04</span></label></li>
+          <li class="row reveal"><label for="c-S-05"><input type="checkbox" id="c-S-05" data-group="physical" data-code="S-05"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Well-groomed</span><span class="row__leader"></span><span class="row__code">S-05</span></label></li>
+          <li class="row reveal"><label for="c-S-06"><input type="checkbox" id="c-S-06" data-group="physical" data-code="S-06"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.6l3.6 3.6L13.5 4"/></svg></span><span class="row__text">Not insanely handsome — <em>just someone I'm attracted to</em></span><span class="row__leader"></span><span class="row__code">S-06</span></label></li>
+        </ul>
+      </section>
+
+      <!-- 04 RED FLAGS -->
+      <section class="spec spec--flags reveal" aria-labelledby="s4">
+        <header class="spec__head">
+          <span class="spec__reg" aria-hidden="true">+</span>
+          <div class="spec__no">04</div>
+          <div class="spec__title">
+            <h2 id="s4">Automatic rejection</h2>
+            <p>Tick anything here and the scoring stops. Immediately.</p>
+          </div>
+          <div class="spec__tally"><b id="t-flags">0</b><span>/8</span></div>
+        </header>
+        <ul class="rows">
+          <li class="row reveal"><label for="c-X-01"><input type="checkbox" id="c-X-01" data-group="flags" data-code="X-01"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Doesn't trust me</span><span class="row__leader"></span><span class="row__code">X-01</span></label></li>
+          <li class="row reveal"><label for="c-X-02"><input type="checkbox" id="c-X-02" data-group="flags" data-code="X-02"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Controlling or overly jealous</span><span class="row__leader"></span><span class="row__code">X-02</span></label></li>
+          <li class="row reveal"><label for="c-X-03"><input type="checkbox" id="c-X-03" data-group="flags" data-code="X-03"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Doesn't respect my career</span><span class="row__leader"></span><span class="row__code">X-03</span></label></li>
+          <li class="row reveal"><label for="c-X-04"><input type="checkbox" id="c-X-04" data-group="flags" data-code="X-04"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Doesn't communicate</span><span class="row__leader"></span><span class="row__code">X-04</span></label></li>
+          <li class="row reveal"><label for="c-X-05"><input type="checkbox" id="c-X-05" data-group="flags" data-code="X-05"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Doesn't want children</span><span class="row__leader"></span><span class="row__code">X-05</span></label></li>
+          <li class="row reveal"><label for="c-X-06"><input type="checkbox" id="c-X-06" data-group="flags" data-code="X-06"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Emotionally immature</span><span class="row__leader"></span><span class="row__code">X-06</span></label></li>
+          <li class="row reveal"><label for="c-X-07"><input type="checkbox" id="c-X-07" data-group="flags" data-code="X-07"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Doesn't take responsibility for his actions</span><span class="row__leader"></span><span class="row__code">X-07</span></label></li>
+          <li class="row reveal"><label for="c-X-08"><input type="checkbox" id="c-X-08" data-group="flags" data-code="X-08"><span class="box"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></span><span class="row__text">Disrespectful</span><span class="row__leader"></span><span class="row__code">X-08</span></label></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ── rail ─────────────────────────────────────────── -->
+    <aside class="rail reveal" id="rail">
+      <div class="rail__card">
+        <div class="rail__head"><span>Sheet status</span><span>FHS-1.0</span></div>
+
+        <div class="gauge" id="gauge">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="gauge__track" cx="100" cy="100" r="86"/>
+            <circle class="gauge__fill" cx="100" cy="100" r="86"/>
+          </svg>
+          <div class="gauge__center">
+            <span><b id="score">0</b><i>%</i></span>
+            <small>compliance</small>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat" data-stat="personality">
+            <div class="stat__top"><span>Personality <i>×3</i></span><b id="g-personality">0/15</b></div>
+            <div class="stat__bar"><i></i></div>
+          </div>
+          <div class="stat" data-stat="relationship">
+            <div class="stat__top"><span>Relationship <i>×2</i></span><b id="g-relationship">0/7</b></div>
+            <div class="stat__bar"><i></i></div>
+            <span class="stat__bonus" id="bonusTag">+1 bonus point</span>
+          </div>
+          <div class="stat" data-stat="physical">
+            <div class="stat__top"><span>Physical <i>×1</i></span><b id="g-physical">0/6</b></div>
+            <div class="stat__bar"><i></i></div>
+          </div>
+          <div class="stat stat--flag" data-stat="flags">
+            <div class="stat__top"><span>Triggers <i>× fatal</i></span><b id="g-flags">0/8</b></div>
+            <div class="stat__bar"><i></i></div>
+          </div>
+        </div>
+
+        <div class="verdict" id="verdict" data-state="pending" aria-live="polite">
+          <div class="verdict__stamp" id="stamp" aria-hidden="true">Rejected</div>
+          <p class="verdict__label">Verdict on: <b id="verdictName">unnamed candidate</b></p>
+          <h3 id="verdictTitle">Awaiting data</h3>
+          <p class="verdict__text" id="verdictText">Tick the sheet to generate a compliance verdict.</p>
+        </div>
+
+        <button class="ghost ghost--full" id="printBtn" type="button">Print datasheet</button>
+        <p class="rail__note">Red flags override the score — one is enough. Personality is weighted highest, because everything else is negotiable.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ── the actual spec ────────────────────────────────── -->
+  <section class="quote reveal">
+    <p class="quote__label"><span>05</span> The feeling actually being specified</p>
+    <blockquote>
+      <p>“I want a man whose presence feels like <em>peace</em>. Someone I can build a life with, laugh with, make decisions with, raise children with, and know that we're on the same team.”</p>
+    </blockquote>
+    <ul class="quote__keys">
+      <li>presence = peace</li>
+      <li>same team</li>
+      <li>build a life</li>
+      <li>raise children</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span>Prepared with love · Rev 1.0</span>
+  <span>All requirements subject to the heart's veto</span>
+  <span>End of document ✦</span>
+</footer>
+
+<div class="pill" id="pill" aria-hidden="true"><b id="pillScore">0%</b><span>compliance</span></div>
+
+<script src="script.js"></script>
+</body>
+</html>
