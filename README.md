@@ -81,7 +81,7 @@ All asset paths are **relative**, so the site works from any subpath — exactly
 ## ✦ Run locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/future-husband-spec.git
+git clone https://github.com/romy-dev-hub/future-husband-spec.git
 cd future-husband-spec
 python3 -m http.server 8000
 # → http://localhost:8000
@@ -100,7 +100,7 @@ git init
 git add .
 git commit -m "Future Husband Specifications v1.0"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/future-husband-spec.git
+git remote add origin https://github.com/romy-dev-hub/future-husband-spec.git
 git push -u origin main
 ```
 
@@ -115,7 +115,7 @@ On GitHub: **Settings → Pages → Build and deployment**
 **3. Wait ~30 seconds**, then open:
 
 ```
-https://YOUR-USERNAME.github.io/future-husband-spec/
+https://romy-dev-hub.github.io/future-husband-spec/
 ```
 
 > **Tip:** drop your files in a `/docs` folder on the branch instead of the root if you want to keep the repository tidy — then select `main /docs` in the Pages settings.
