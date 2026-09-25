@@ -232,9 +232,10 @@ input:checked ~ .row__text{font-weight:500}
 
 .row label:has(input:checked){background:rgba(20,17,13,.045)}
 .row label:has(input:checked)::after{
-  content:"verified";position:absolute;right:.5rem;top:-.55rem;
-  font-family:var(--mono);font-size:.52rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--paper);background:var(--green);padding:.1em .4em;
+  content:"verified";
+  font-family:var(--mono);font-size:.53rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--paper);background:var(--green);padding:.2em .45em;white-space:nowrap;
+  animation:pop .35s cubic-bezier(.3,1.6,.5,1);
 }
 
 /* bonus row */
